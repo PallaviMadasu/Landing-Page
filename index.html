@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>  
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+        <h2>It's not just Coffee<br>It's Starbucks</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+    </div>
+    <div class="imgBox">
+        <img src="img1.png" class="starbucks">
+    </div>
+        </div>
+        <ul class="thumb">
+           <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCirclecolor('#017143')"></li> 
+           <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCirclecolor('#eb7495')"></li>
+           <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCirclecolor('#d752b1')"></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    <section class="Menu" id="Menu">
+        <div class="Menu-img">
+            <img src="menu.jpg" height="500" weight="500">
+        </div>
+        <div class="Menu-text">
+            <h1>Menu</h1>
+            <h3>To get a drink you will enjoy, it is important ordering something based on what you are craving. Ordering at Starbucks does not necessarily mean that you must order coffee; in fact, there are dozens of drink choices including tea, smoothies, and hot chocolates.Try other non-coffee drinks. If you are not interested in coffee or tea, don’t worry - there are several other non-coffee drinks available at Starbucks. For hot drinks, you can get hot chocolate.Don’t be afraid to be specific, enjoy coffee.</h3>
+        </div>
+    </section>
+    <section class="Contact" id="Contact">
+        <div class="Contact-text">
+            <h2>Contact Me</h2>
+        <div class="list">
+            <a href="#"><i class='bx bxs-phone-call'>8341145538</i></a>
+            </div>
+            <div class="list">
+            <a href="https://mail.google.com/mail/u/1/#inbox"><i class='bx bx-envelope'>pallavimadasu2@gmail.com</i></a>
+        </div>
+        <div class="Contact-icons" color="#333">
+            <a target="blank" href="https://www.facebook.com/profile.php?id=100094891302835" ><i class='bx bxl-facebook' ></i></a>
+            <a target="blank" href="https://www.instagram.com/pallavi15__/?next=https%3A%2F%2Fwww.instagram.com%2Fdirect%2Finbox%2F%3F__coig_login%3D1"><i class='bx bxl-instagram'></i></a>
+           
+        </div>
+        </div>
+        </div> 
+</body>
+</html>
